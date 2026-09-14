@@ -4,6 +4,30 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="VjCMbQUxMlrzTSV1VaPq-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="User Management&lt;div&gt;Service&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="440" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VjCMbQUxMlrzTSV1VaPq-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="User" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VjCMbQUxMlrzTSV1VaPq-12" edge="1" parent="1" source="VjCMbQUxMlrzTSV1VaPq-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="VjCMbQUxMlrzTSV1VaPq-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VjCMbQUxMlrzTSV1VaPq-3" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Authentication" vertex="1">
+          <mxGeometry height="80" width="80" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VjCMbQUxMlrzTSV1VaPq-4" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Product Management&lt;div&gt;Service&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="440" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="VjCMbQUxMlrzTSV1VaPq-5" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Order Management&lt;div&gt;Service&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="440" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="VjCMbQUxMlrzTSV1VaPq-7" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="80" width="60" x="640" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="VjCMbQUxMlrzTSV1VaPq-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="API Gateway" vertex="1">
+          <mxGeometry height="320" width="100" x="260" y="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
