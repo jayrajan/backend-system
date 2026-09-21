@@ -22,6 +22,10 @@ These patterns provides various ways of object creation, increasing flexibility 
 
 Also known as a Virtual constructor
 
+The first step is to create the interface Base class and then define each of the product interface
+
+Then you create the creator class with a creator abstract method which determines which prouct child class gets created.
+
 ## 2. Abstract Factory
 
 ## 3. Builder
