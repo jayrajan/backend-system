@@ -17,6 +17,9 @@ Keep this section concise. A reader should understand the purpose of the project
 
 # Tech-Stack
 
+Python
+uv for dependency management
+
 ## Frontend
 
 ## Backend
@@ -31,7 +34,21 @@ Keep this section concise. A reader should understand the purpose of the project
 
 ## Pre-Req
 
+Install UV
+Add dependencies to the project using command:  
+`uv add fastapi`
+
+Remove dependencies to the project using command:  
+`uv remove requests`
+
+Update the project env using command:  
+`uv sync`
+
 ## Installation
+
+## Run the application
+
+`uv run main.py`
 
 # Testing
 
