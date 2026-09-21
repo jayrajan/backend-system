@@ -5,8 +5,6 @@
 
 # Product Interface
 from abc import ABC, abstractmethod
-from turtle import mode
-
 
 class TransportMode(ABC):
     """
