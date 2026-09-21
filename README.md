@@ -44,6 +44,9 @@ Remove dependencies to the project using command:
 Update the project env using command:  
 `uv sync`
 
+Activate the virtual env before dev'ing or running the script:  
+`source .venv/bin/activate`
+
 ## Installation
 
 ## Run the application
