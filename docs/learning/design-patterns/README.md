@@ -20,6 +20,8 @@ These patterns provides various ways of object creation, increasing flexibility 
 
 ## 1. Factory Method
 
+Its a creational pattern that provides an interface for creating objects using super class but allows the sub-class to alter the type of objects.
+
 Also known as a Virtual constructor
 
 The first step is to create the interface Base class and then define each of the product interface
