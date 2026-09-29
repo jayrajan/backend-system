@@ -36,24 +36,45 @@ PODMAN for building containers and runnung containers
 
 ## Pre-Req
 
-Install UV
-Add dependencies to the project using command:  
-`uv add fastapi`
+1. Podman commands
 
-Remove dependencies to the project using command:  
-`uv remove requests`
+   Start podman VM
 
-Update the project env using command:  
-`uv sync`
+   ```
+   podman machine start
+   ```
 
-Activate the virtual env before dev'ing or running the script:  
-`source .venv/bin/activate`
+2. UV commands
+   Add dependencies to the project using command:
+
+   ```
+   uv add fastapi
+   ```
+
+   Remove dependencies to the project using command:
+
+   ```
+   uv remove requests
+   ```
+
+   Update the project env using command:
+
+   ```
+   uv sync
+   ```
+
+3. Activate the virtual env before dev'ing or running the script:
+   ```
+   source .venv/bin/activate
+   ```
 
 ## Installation
 
 ## Run the application
 
-`uv run main.py`
+```
+uv run main.py
+```
 
 # Testing
 
