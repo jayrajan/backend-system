@@ -30,6 +30,8 @@ uv for dependency management
 
 ## Other
 
+PODMAN for building containers and runnung containers
+
 # Getting Started
 
 ## Pre-Req
