@@ -36,6 +36,13 @@ PODMAN for building containers and runnung containers
 
 ## Pre-Req
 
+1. pip install
+
+   ```
+   curl -O https://bootstrap.pypa.io/pip/3.9/get-pip.py
+   python3 get-pip.py --user
+   ```
+
 1. Podman commands
 
    Start podman VM
@@ -44,7 +51,21 @@ PODMAN for building containers and runnung containers
    podman machine start
    ```
 
-2. UV commands
+   ```
+   python3 -m pip install --user podman-compose
+
+   ```
+
+   add Python 3.9’s user binaries to your path:
+
+   ```
+   echo 'export PATH="$HOME/Library/Python/3.9/bin:$PATH"' >> ~/.zshrc
+   source ~/.zshrc
+
+   podman-compose --version
+   ```
+
+1. UV commands
    Add dependencies to the project using command:
 
    ```
@@ -63,7 +84,7 @@ PODMAN for building containers and runnung containers
    uv sync
    ```
 
-3. Activate the virtual env before dev'ing or running the script:
+1. Activate the virtual env before dev'ing or running the script:
    ```
    source .venv/bin/activate
    ```
