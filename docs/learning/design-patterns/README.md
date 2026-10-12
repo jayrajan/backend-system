@@ -30,6 +30,8 @@ Then you create the creator class with a creator abstract method which determine
 
 ## 2. Abstract Factory
 
+Managing a series of products and its variants whereas preserving the business logic for each of the product with an abstract creator class and an abstract interface class.
+
 ## 3. Builder
 
 ## 4. Prototype
