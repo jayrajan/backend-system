@@ -45,6 +45,12 @@ PODMAN for building containers and runnung containers
 
 1. Podman commands
 
+   Stop podman VM
+
+   ```
+   podman machine stop
+   ```
+
    Start podman VM
 
    ```
@@ -85,13 +91,26 @@ PODMAN for building containers and runnung containers
    ```
 
 1. Activate the virtual env before dev'ing or running the script:
+
    ```
    source .venv/bin/activate
+   ```
+
+   Alembic commands:
+
+   ```
+   alembic upgrade head
    ```
 
 ## Installation
 
 ## Run the application
+
+Load the docker-compose file using the below command from project root:
+
+```
+podman-compose -f docker-compose.yml up -d
+```
 
 ```
 uv run main.py
