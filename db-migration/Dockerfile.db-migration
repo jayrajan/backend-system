@@ -1,0 +1,19 @@
+# base image
+FROM python:3.12-slim
+
+# Copy uv from the official uv image
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+WORKDIR /db-migration
+
+# Install dependencies first for better Docker layer caching
+COPY pyproject.toml uv.lock ./
+
+RUN uv sync --frozen --no-dev
+
+# Copy Alembic configuration and migrations
+COPY alembic.ini ./
+COPY db-migration ./alembic
+
+# Run migrations when the container starts
+CMD ["uv", "run", "alembic", "upgrade", "head"]
