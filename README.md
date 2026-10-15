@@ -102,6 +102,12 @@ PODMAN for building containers and runnung containers
    alembic upgrade head
    ```
 
+   Build the db migration container image from root using below command:
+
+   ```
+   podman build -f ./db-migration/Dockerfile.db-migration -t db-migration:latest .
+   ```
+
 ## Installation
 
 ## Run the application
