@@ -1,8 +1,8 @@
 # Postgres
 services:
-  postgres:
+  postgres_db:
     image: postgres:latest
-    container_name: postgres
+    container_name: postgre_db
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -10,7 +10,30 @@ services:
       POSTGRES_HOST: ${POSTGRES_HOST}
     ports:
       - "${POSTGRES_PORT}:5432"
+    networks:
+      - backend-system-network
     volumes:
       - postgres_data:/var/lib/postgresql
+
+  db-migration:
+    build:
+      context: .
+      dockerfile: ./db-migration/Dockerfile.db-migration
+    container_name: db_migration
+    depends_on:
+      - db
+    networks:
+      - backend-system-network
+    # environment:
+    #   POSTGRES_USER: ${POSTGRES_USER}
+    #   POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    #   POSTGRES_DB: ${POSTGRES_DB}
+    #   POSTGRES_HOST: ${POSTGRES_HOST}
+    # command: ["alembic", "upgrade", "head"]
+
+networks:
+  backend-system-network:
+    driver: bridge
+
 volumes:
   postgres_data:
